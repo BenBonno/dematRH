@@ -4,7 +4,7 @@
   "main": "backend/src/index.ts",
   "scripts": {
     "watch": "tsc --watch",
-    "backend": "node --watch build/index.js",
+    "backend": "nodemon --watch build/index.js",
     "dev:backend": "concurrently \"npm run watch\" \"npm run backend\"",
     "dev:frontend": "npm start --prefix ./frontend",
     "check-types": "tsc",
